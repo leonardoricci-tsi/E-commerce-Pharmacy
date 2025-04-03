@@ -1,0 +1,163 @@
+body{
+    background-color:  #cce3ee;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+header div{
+    font-size: 30px;
+}
+.heart span{
+    font-size: 40px;
+}
+.divBusca input{
+    width: 800px;
+    height: auto;
+    border-radius: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+nav ul {
+    display: flex;
+}
+nav li {
+    display: flex;
+    margin: 40px;
+}
+nav .material-symbols-outlined {
+    font-size: 36px;
+    margin-top: -30px;
+}
+.nada {
+    padding-top: 20px;
+}
+.container{
+    display: flex;
+    margin: auto;
+    max-width: 1140px;
+    gap: 100px;
+    justify-content: center;
+    cursor: pointer;
+    top: -4px;
+    transition: all 0.3s ease;
+}
+.cont-cards{
+    display: flex;
+    flex-direction: column;
+    background-color: #abd7ed;
+    border-radius: 30px;
+    padding: 30px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.cards:hover{
+    transform: translateY(-6px);
+}
+.cards {
+    text-align: center;
+    cursor: pointer;
+    
+    
+}
+.cards span {
+    font-size: 50px;
+}
+.produtos {
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    padding: 30px;
+    background-color: #cce3ee;
+    border-radius: 30px;
+}
+.produtos p {
+    font-size: 20px;
+
+}
+.imagens {
+    display: flex;        
+    justify-content: space-around; 
+    align-items: center;  
+    gap: 20px;            
+    flex-wrap: wrap;   
+ 
+}
+
+.imagens div {
+    text-align: center;   
+}
+
+.imagens img {
+    width: 150px;
+    height: 150px;
+    background-color: #cce3ee;
+    border-radius: 25px;
+    
+}
+.imagens div button{
+    border-radius: 15px;
+    width: 150px;
+    height: 45px;
+    position: relative;
+    transition: all 0.3s ease; 
+    cursor: pointer;
+    top: -4px;
+    background-color: #a6f2f2;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+button:hover {
+    transform: translateY(-6px); 
+  }
+.nada2{
+    background-color:  #cce3ee;
+}
+.produtos2 {
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    padding: 30px;
+    background-color: #cce3ee;
+    border-radius: 30px;
+}
+.produtos2 p {
+    font-size: 20px;
+
+}
+.imagens2 {
+    display: flex;        
+    justify-content: space-around; 
+    align-items: center;  
+    gap: 20px;            
+    flex-wrap: wrap;      
+}
+
+.imagens2 div {
+    text-align: center;   
+}
+
+.imagens2 img {
+    width: 150px;
+    height: 150px;
+    background-color:azure;
+    border-radius: 25px;
+    
+}
+.imagens2 div button{
+    border-radius: 15px;
+    width: 150px;
+    height: 45px;
+    position: relative;
+    transition: all 0.3s ease; 
+    cursor: pointer;
+    top: -4px;
+    background-color: #a6f2f2;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.nada3{
+    background-color: #abd7ed;
+}
+footer{
+    text-align: center;
+
+}
