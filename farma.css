@@ -1,49 +1,63 @@
-body{
+body {
     background-color:  #cce3ee;
 }
 
-header{
+header {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
-header div{
+
+header div {
     font-size: 30px;
 }
-.heart span{
+
+.heart span {
     font-size: 40px;
 }
-.divBusca input{
-    width: 800px;
+
+.divBusca input {
+    width: 100%;
+    max-width: 800px;
     height: auto;
     border-radius: 25px;
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
 nav ul {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
 nav li {
     display: flex;
-    margin: 40px;
+    margin: 20px;
 }
+
 nav .material-symbols-outlined {
     font-size: 36px;
     margin-top: -30px;
 }
+
 .nada {
     padding-top: 20px;
 }
-.container{
+
+.container {
     display: flex;
     margin: auto;
     max-width: 1140px;
-    gap: 100px;
+    gap: 50px;
     justify-content: center;
     cursor: pointer;
     top: -4px;
     transition: all 0.3s ease;
+    flex-wrap: wrap;
 }
-.cont-cards{
+
+.cont-cards {
     display: flex;
     flex-direction: column;
     background-color: #abd7ed;
@@ -51,18 +65,20 @@ nav .material-symbols-outlined {
     padding: 30px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
-.cards:hover{
+
+.cards:hover {
     transform: translateY(-6px);
 }
+
 .cards {
     text-align: center;
     cursor: pointer;
-    
-    
 }
+
 .cards span {
     font-size: 50px;
 }
+
 .produtos {
     display: flex;
     flex-direction: column;
@@ -71,21 +87,21 @@ nav .material-symbols-outlined {
     background-color: #cce3ee;
     border-radius: 30px;
 }
+
 .produtos p {
     font-size: 20px;
-
 }
+
 .imagens {
-    display: flex;        
-    justify-content: space-around; 
-    align-items: center;  
-    gap: 20px;            
-    flex-wrap: wrap;   
- 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .imagens div {
-    text-align: center;   
+    text-align: center;
 }
 
 .imagens img {
@@ -93,25 +109,28 @@ nav .material-symbols-outlined {
     height: 150px;
     background-color: #cce3ee;
     border-radius: 25px;
-    
 }
-.imagens div button{
+
+.imagens div button {
     border-radius: 15px;
     width: 150px;
     height: 45px;
     position: relative;
-    transition: all 0.3s ease; 
+    transition: all 0.3s ease;
     cursor: pointer;
     top: -4px;
     background-color: #a6f2f2;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
+
 button:hover {
-    transform: translateY(-6px); 
-  }
-.nada2{
+    transform: translateY(-6px);
+}
+
+.nada2 {
     background-color:  #cce3ee;
 }
+
 .produtos2 {
     display: flex;
     flex-direction: column;
@@ -120,44 +139,130 @@ button:hover {
     background-color: #cce3ee;
     border-radius: 30px;
 }
+
 .produtos2 p {
     font-size: 20px;
-
 }
+
 .imagens2 {
-    display: flex;        
-    justify-content: space-around; 
-    align-items: center;  
-    gap: 20px;            
-    flex-wrap: wrap;      
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .imagens2 div {
-    text-align: center;   
+    text-align: center;
 }
 
 .imagens2 img {
     width: 150px;
     height: 150px;
-    background-color:azure;
+    background-color: azure;
     border-radius: 25px;
-    
 }
-.imagens2 div button{
+
+.imagens2 div button {
     border-radius: 15px;
     width: 150px;
     height: 45px;
     position: relative;
-    transition: all 0.3s ease; 
+    transition: all 0.3s ease;
     cursor: pointer;
     top: -4px;
     background-color: #a6f2f2;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
-.nada3{
+
+.nada3 {
     background-color: #abd7ed;
 }
-footer{
-    text-align: center;
 
+footer {
+    text-align: center;
+}
+
+/* Responsividade */
+@media only screen and (max-width: 576px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .divBusca input {
+        width: 90%;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .produtos, .produtos2 {
+        padding: 20px;
+    }
+
+    .imagens img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .imagens div button {
+        width: 120px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .produtos, .produtos2 {
+        padding: 25px;
+    }
+
+    .imagens img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .imagens div button {
+        width: 130px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    header {
+        flex-direction: row;
+    }
+
+    .container {
+        flex-direction: row;
+    }
+
+    .produtos, .produtos2 {
+        padding: 30px;
+    }
+
+    .imagens img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .imagens div button {
+        width: 150px;
+    }
+}
+
+@media print {
+    body {
+        background-color: blue;
+    }
 }
